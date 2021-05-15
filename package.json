@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/telsearch.ts",
+    "tel": "node dist/telsearch.js",
+    "debug": "PWDEBUG=1 yarn tel",
+    "debug:api": "DEBUG=pw:api yarn tel",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "playwright": "^1.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
