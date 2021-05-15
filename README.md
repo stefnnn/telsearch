@@ -5,6 +5,7 @@ This is a quick script to
 ## How to run
 
 ```bash
-docker build . -t telsearch
-docker run -d telsearch "Your Name" "Your location"
+yarn install
+yarn build
+yarn tel "Your name" "Your location"
 ```
